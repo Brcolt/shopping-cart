@@ -1,0 +1,13 @@
+com\colt\estudo\ms\shoppingcart\shoppingcart\dto\ItemDTO$ItemDTOBuilder.class
+com\colt\estudo\ms\shoppingcart\shoppingcart\model\Cart.class
+com\colt\estudo\ms\shoppingcart\shoppingcart\dto\ItemDTO.class
+com\colt\estudo\ms\shoppingcart\shoppingcart\mapper\CartMapper.class
+com\colt\estudo\ms\shoppingcart\shoppingcart\repository\CartRepository.class
+com\colt\estudo\ms\shoppingcart\shoppingcart\dto\CartDTO$CartDTOBuilder.class
+com\colt\estudo\ms\shoppingcart\shoppingcart\mapper\CartMapperImpl.class
+com\colt\estudo\ms\shoppingcart\shoppingcart\ShoppingCartApplication.class
+com\colt\estudo\ms\shoppingcart\shoppingcart\service\CartService.class
+com\colt\estudo\ms\shoppingcart\shoppingcart\dto\CartDTO.class
+com\colt\estudo\ms\shoppingcart\shoppingcart\config\RedisConfig.class
+com\colt\estudo\ms\shoppingcart\shoppingcart\controller\CartController.class
+com\colt\estudo\ms\shoppingcart\shoppingcart\model\Item.class

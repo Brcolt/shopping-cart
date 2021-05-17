@@ -1,0 +1,10 @@
+E:\Trabalho\shopping-cart\src\main\java\com\colt\estudo\ms\shoppingcart\shoppingcart\model\Cart.java
+E:\Trabalho\shopping-cart\src\main\java\com\colt\estudo\ms\shoppingcart\shoppingcart\model\Item.java
+E:\Trabalho\shopping-cart\src\main\java\com\colt\estudo\ms\shoppingcart\shoppingcart\repository\CartRepository.java
+E:\Trabalho\shopping-cart\src\main\java\com\colt\estudo\ms\shoppingcart\shoppingcart\ShoppingCartApplication.java
+E:\Trabalho\shopping-cart\src\main\java\com\colt\estudo\ms\shoppingcart\shoppingcart\config\RedisConfig.java
+E:\Trabalho\shopping-cart\src\main\java\com\colt\estudo\ms\shoppingcart\shoppingcart\mapper\CartMapper.java
+E:\Trabalho\shopping-cart\src\main\java\com\colt\estudo\ms\shoppingcart\shoppingcart\dto\CartDTO.java
+E:\Trabalho\shopping-cart\src\main\java\com\colt\estudo\ms\shoppingcart\shoppingcart\service\CartService.java
+E:\Trabalho\shopping-cart\src\main\java\com\colt\estudo\ms\shoppingcart\shoppingcart\dto\ItemDTO.java
+E:\Trabalho\shopping-cart\src\main\java\com\colt\estudo\ms\shoppingcart\shoppingcart\controller\CartController.java
