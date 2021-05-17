@@ -24,4 +24,9 @@ public class CartController {
     public void clear(@PathVariable("id") Integer id) {
         cartService.deleteById(id);
     }
+
+    @GetMapping("/{id}")
+    public CartDTO findCart(@PathVariable("id") Integer id) {
+        return cartService.findById(id);
+    }
 }

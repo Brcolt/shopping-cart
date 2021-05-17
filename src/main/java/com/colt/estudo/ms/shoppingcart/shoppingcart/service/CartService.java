@@ -12,9 +12,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Collections;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
@@ -29,7 +27,7 @@ public class CartService {
         Optional<Cart> savedCart = cartRepository.findById(id);
         Item item = itemMapper.toModel(itemDTO);
         Cart cart;
-        if(savedCart.equals(Optional.empty())) {
+        if (savedCart.equals(Optional.empty())) {
             cart = new Cart(id);
         } else {
             cart = savedCart.get();
@@ -37,6 +35,13 @@ public class CartService {
         cart.getItems().add(item);
 
         cartRepository.save(cart);
+
+        return cartMapper.toDTO(cart);
+    }
+
+    public CartDTO findById(Integer id) {
+        Optional<Cart> findedCart = cartRepository.findById(id);
+        Cart cart = findedCart.get();
 
         return cartMapper.toDTO(cart);
     }

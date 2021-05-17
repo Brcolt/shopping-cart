@@ -1,13 +1,12 @@
 package com.colt.estudo.ms.shoppingcart.shoppingcart.mapper;
 
 import com.colt.estudo.ms.shoppingcart.shoppingcart.dto.ItemDTO;
-import com.colt.estudo.ms.shoppingcart.shoppingcart.dto.ItemDTO.ItemDTOBuilder;
 import com.colt.estudo.ms.shoppingcart.shoppingcart.model.Item;
 import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2021-05-17T14:45:53-0300",
+    date = "2021-05-17T15:26:59-0300",
     comments = "version: 1.4.1.Final, compiler: javac, environment: Java 14.0.2 (Oracle Corporation)"
 )
 public class ItemMapperImpl implements ItemMapper {
@@ -20,6 +19,7 @@ public class ItemMapperImpl implements ItemMapper {
 
         Item item = new Item();
 
+        item.setProductId( itemDTO.getProductId() );
         item.setAmount( itemDTO.getAmount() );
 
         return item;
@@ -31,10 +31,11 @@ public class ItemMapperImpl implements ItemMapper {
             return null;
         }
 
-        ItemDTOBuilder itemDTO = ItemDTO.builder();
+        ItemDTO itemDTO = new ItemDTO();
 
-        itemDTO.amount( item.getAmount() );
+        itemDTO.setProductId( item.getProductId() );
+        itemDTO.setAmount( item.getAmount() );
 
-        return itemDTO.build();
+        return itemDTO;
     }
 }

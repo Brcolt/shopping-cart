@@ -10,7 +10,7 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2021-05-17T13:58:55-0300",
+    date = "2021-05-17T15:26:59-0300",
     comments = "version: 1.4.1.Final, compiler: javac, environment: Java 14.0.2 (Oracle Corporation)"
 )
 public class CartMapperImpl implements CartMapper {
@@ -52,6 +52,7 @@ public class CartMapperImpl implements CartMapper {
 
         Item item = new Item();
 
+        item.setProductId( itemDTO.getProductId() );
         item.setAmount( itemDTO.getAmount() );
 
         return item;
@@ -77,6 +78,7 @@ public class CartMapperImpl implements CartMapper {
 
         ItemDTO itemDTO = new ItemDTO();
 
+        itemDTO.setProductId( item.getProductId() );
         itemDTO.setAmount( item.getAmount() );
 
         return itemDTO;
