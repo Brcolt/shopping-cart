@@ -10,7 +10,7 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2021-05-17T15:26:59-0300",
+    date = "2021-05-24T09:02:06-0300",
     comments = "version: 1.4.1.Final, compiler: javac, environment: Java 14.0.2 (Oracle Corporation)"
 )
 public class CartMapperImpl implements CartMapper {
